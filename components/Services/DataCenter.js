@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Footer/WrapperFooter';
+import Footer from '../Footer/Footer';
 import CommonFooter from '../CommonFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Header from '../Header/Header';

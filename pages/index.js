@@ -1,8 +1,6 @@
 import Banner from "../components/Banner/Banner";
 import getNewHomeData from "../query/newHome/newHome";
 
-import getsmartSolutionsData from "../query/Services/smartSolutions";
-import SmartSolutions from '../components/Services/SmartSolutions';
 
 const Index = ({ home }) => {
   const bannerData = home.data.pageBy.bannerSection.banner;
@@ -19,7 +17,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       home: await getNewHomeData()
-      // smartSolutions: await getsmartSolutionsData(),
     },
   };
 }

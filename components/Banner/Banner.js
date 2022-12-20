@@ -1,5 +1,5 @@
 
-import Footer from '../Footer/WrapperFooter';
+import Footer from '../Footer/Footer';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ReactFullpage from '@fullpage/react-fullpage';
@@ -44,8 +44,8 @@ const Banner = ({ banner, video, references, footerSection, singleImageData }) =
                                     item.bannerItems && item.bannerItems.length > 0 && item.bannerItems.map((item2, index2) => {
                                         return (
                                             <section
-                                                className={`${index2 === 0 && "text-center"}  section bg-gradient bg-size-cover bg-no-repeat bg-center`}
-                                                style={{ backgroundImage: `url(${item2.bannerImage.sourceUrl})!important` }}
+                                            className={`${index2 === 0 && "text-center"} ${item2?.bgImageName} section bg-gradient bg-size-cover bg-no-repeat bg-center`}
+                                            // style={{ backgroundImage: `url(${item2.bannerImage.sourceUrl})!important` }}
                                             >
                                                 <div id="index-container" className="container-lg pt-6">
                                                     <div className="mx-lg-6 mx-4 pt-lg-0 pb-lg-0 pt-5 pb-5">
@@ -81,7 +81,7 @@ const Banner = ({ banner, video, references, footerSection, singleImageData }) =
                                     )
                                 ))
                             }
-                            < section id="index-section_10" style={{ backgroundColor: 'rgb(2,0,36)' }} className="section bg-gradient bg-size-cover bg-no-repeat bg-center" >
+                            < section id="index-section_10" className="section bg-gradient bg-size-cover bg-no-repeat bg-center" >
                                 <div id="index-container" className="container-lg">
                                     <div className="mx-lg-6 mx-4 pt-lg-0 pb-lg-0 pt-5 pb-5">
                                         <div className="row pt-2 pb-2">

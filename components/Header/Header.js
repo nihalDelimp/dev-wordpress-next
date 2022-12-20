@@ -12,11 +12,11 @@ const Header = () => (
           >
             <ul className="navbar-nav main-nav flex-wrap">
               <li className="nav-item active">
-
-                <a href="/" className="nav-link">
+               <Link href="/" >
+                <a  className="nav-link">
                   Home
                 </a>
-
+                </Link >
               </li>
               <li className="nav-item dropdown navbarDropdownClass">
                 <a

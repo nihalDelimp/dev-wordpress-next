@@ -14,6 +14,7 @@ const getNewHomeData = async () => {
                   bannerTitle
                   bannerDescription
                   bannerUrl
+                  bgImageName
                   bannerButtonLabel
                   bannerImage{
                     sourceUrl
